@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rbnda.migestordetareas.AgregarTarea"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Tarea"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textColor="#fcfbfb"/>
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#1c16b9"
+        android:hint="Nombre"
+        android:textSize="30dp"
+        android:id="@+id/etnombre"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#1c16b9"
+        android:hint="Descripción"
+        android:textSize="30dp"
+        android:id="@+id/etdescripcion"
+        android:lines="3"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Fecha y Hora"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="@string/formatofecha"
+            android:layout_marginTop="32dp"
+            />
+
+        <ImageButton
+            android:id="@+id/ibfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iconocalendario"
+
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ethora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="@string/formatohora"
+            android:layout_marginTop="32dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/ibhora"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iconohora"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Estatus"
+            android:textSize="30dp"
+            android:id="@+id/etrealizado"/>
+
+        <Button
+            android:layout_marginLeft="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:id="@+id/btnagregar"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mi Gestor de Tareas</string>
+    <string name="title_activity_agregar_tarea">AgregarTarea</string>
+    <string name="formatofecha">dd/mm/yyyy</string>
+    <string name="formatohora">hh:mm</string>
+
+    <string-array name="elementosMenuContextual">
+        <item>Ver</item>
+        <item>Editar</item>
+        <item>Eliminar</item>
+
+    </string-array>
+
+    <string-array name="arrayspinner">
+        <item>Realizada</item>
+        <item>No Realizada</item>
+    </string-array>
+
+</resources>
